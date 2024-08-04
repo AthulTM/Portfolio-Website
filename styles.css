@@ -613,6 +613,29 @@ main {
   margin-bottom: 1em;
 }
 
+/* General styles for all logos */
+.education__logo, .certificate__logo {
+  width: 100px; /* Default width */
+  height: auto;
+}
+
+/* Specific styles */
+.srm-logo {
+  width: 100px; /* Maintain default size for SRM logo */
+}
+
+.isi-logo {
+  width: 200px; /* Increase size for Indian School Ibri logo */
+}
+
+.internshala-logo {
+  width: 200px; /* Increase size for Internshala logo */
+}
+
+.nptel-logo {
+  width: 150px; /* Maintain default size for NPTEL logo */
+}
+
 /* Certificates Section */
 .certificates {
   margin-top: 5em;
