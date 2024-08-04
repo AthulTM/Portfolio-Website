@@ -62,6 +62,7 @@ const scrollUp = () => {
 
 document.addEventListener('scroll', scrollUp)
 
+emailjs.init('1qFZO2oYoxLzYAsQL'); //email js user id/public key
 
 document.getElementById('contact-form').addEventListener('submit', function(event) {
 	event.preventDefault();
@@ -77,7 +78,7 @@ document.getElementById('contact-form').addEventListener('submit', function(even
 	};
 
 	// Send email
-	emailjs.send(/*your_service_id*/'' ,/*your_template_id*/ '', formData)
+	emailjs.send(/*your_service_id*/'service_athultm16' ,/*your_template_id*/ 'template_athultm16', formData)
 		.then(function(response) {
 			console.log('Email sent!', response);
 			alert('Email sent successfully!');
@@ -119,4 +120,3 @@ document.addEventListener('DOMContentLoaded', () => {
 	  observer.observe(section);
 	});
   });
-  
